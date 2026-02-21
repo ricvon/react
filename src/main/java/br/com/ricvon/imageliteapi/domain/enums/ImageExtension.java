@@ -18,10 +18,10 @@ public enum ImageExtension {
         this.mediaType = mediaType;
     }
 
-    public static ImageExtension valueOf(MediaType mediaType){
+    /*public static ImageExtension valueOf(MediaType mediaType){
         return Arrays.stream(values())
                 .filter(ie -> ie.mediaType.equals(mediaType))
                 .findFirst()
                 .orElse(null);
-    }
+    }*/
 }
