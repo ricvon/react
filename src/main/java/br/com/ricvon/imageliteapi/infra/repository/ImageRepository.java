@@ -38,6 +38,6 @@ public interface ImageRepository extends JpaRepository<Image, String>, JpaSpecif
             spec = spec.and(nameOrTagsLike);
         }
 
-        return findAll();
+        return findAll(spec);
     }
 }
